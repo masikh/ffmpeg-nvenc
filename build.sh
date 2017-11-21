@@ -210,18 +210,17 @@ BuildOBS() {
     if [ -d obs-studio ]; then
         cd obs-studio
         git pull
-	make
+	make -j${cpus}
     else
         git clone --recursive https://github.com/masikh/obs-studio.git
 	cd obs-studio/plugins
 	git clone --recursive https://github.com/masikh/obs-websocket.git
         cd ..
 	cmake -DLIBOBS_INCLUDE_DIR=${source_dir}/obs-studio/libobs .
-        make
+        make -j${cpus}
 	echo "add_subdirectory(obs-websocket)" >> plugins/CMakeLists.txt
         cmake -DLIBOBS_INCLUDE_DIR=${source_dir}/obs-studio/libobs -DLIBOBS_LIB=${source_dir}/obs-studio/libobs/libobs.so .
     fi
-    make -j${cpus}
     make install
 }
 
