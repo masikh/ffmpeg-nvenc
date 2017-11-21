@@ -1,4 +1,4 @@
-# FFmpeg + nvenc build script
+# FFmpeg (with nvenc | NVidia hardware accelaration support) and OBS-Studio
 
 This script will compile FFmpeg with Nvidia NVENC support enabled.
 It can also build OBS Studio or Simple Screen Recorder using that FFmpeg build
