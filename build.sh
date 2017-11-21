@@ -271,16 +271,16 @@ EOF
 if [ $1 ]; then
     $1
 else
-#    InstallDependencies
-#    InstallNvidiaSDK
-#    BuildNasm
-#    BuildYasm
-#    BuildX264
-#    BuildFdkAac
-#    BuildLame
-#    BuildOpus
-#    BuildVpx
-#    BuildFFmpeg
+    InstallDependencies
+    InstallNvidiaSDK
+    BuildNasm
+    BuildYasm
+    BuildX264
+    BuildFdkAac
+    BuildLame
+    BuildOpus
+    BuildVpx
+    BuildFFmpeg
     if [ "$build_obs" ]; then
         BuildOBS
         MakeLauncherOBS
