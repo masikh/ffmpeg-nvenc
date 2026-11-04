@@ -1,5 +1,7 @@
 # FFmpeg (with nvenc | NVidia hardware accelaration support) and OBS-Studio
 
+[![Language](https://img.shields.io/github/languages/top/masikh/ffmpeg-nvenc)](https://github.com/masikh/ffmpeg-nvenc) [![Last commit](https://img.shields.io/github/last-commit/masikh/ffmpeg-nvenc)](https://github.com/masikh/ffmpeg-nvenc/commits) [![Repo size](https://img.shields.io/github/repo-size/masikh/ffmpeg-nvenc)](https://github.com/masikh/ffmpeg-nvenc) [![Stars](https://img.shields.io/github/stars/masikh/ffmpeg-nvenc?style=flat)](https://github.com/masikh/ffmpeg-nvenc/stargazers)
+
 This script will compile FFmpeg with Nvidia NVENC support enabled.
 It can also build OBS Studio or Simple Screen Recorder using that FFmpeg build
 thus providing NVENC for OBS.
